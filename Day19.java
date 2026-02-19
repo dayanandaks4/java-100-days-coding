@@ -1,4 +1,4 @@
-//Sort the Array Using Selection sort 
+// Sort the Array Using Selection sort 
 
 public class SelectionSort {
 
