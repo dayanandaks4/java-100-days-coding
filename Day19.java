@@ -1,38 +1,30 @@
-//Sort the Array Using Selectio
-
+//Sort the Array Using Selection sort 
 
 public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
-        int n = arr.length;
+        int lengthOfArray = arr.length;
 
-        // One by one move the boundary of the unsorted subarray
-        for (int i = 0; i < n - 1; i++) {
-            // Find the minimum element in the unsorted part of the array
-            int minIndex = i;
-            for (int j = i + 1; j < n; j++) {
+        for (int index = 0; index < lengthOfArray - 1; index++) {
+            int minIndex = index;
+            for (int j = index + 1; j < lengthOfArray; j++) {
                 if (arr[j] < arr[minIndex]) {
                     minIndex = j;
                 }
             }
-
-            // Swap the found minimum element with the first element of the unsorted part
             int temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
+            arr[minIndex] = arr[index];
+            arr[index] = temp;
         }
     }
-
-    // Driver code to test the selection sort implementation
     public static void main(String[] args) {
+        System.out.println("hello");
         int[] data = {7, 4, 10, 8, 3, 1};
         System.out.println("Original array:");
         for (int num : data) {
             System.out.print(num + " ");
         }
-        
         selectionSort(data);
-
         System.out.println("\nSorted array:");
         for (int num : data) {
             System.out.print(num + " ");
