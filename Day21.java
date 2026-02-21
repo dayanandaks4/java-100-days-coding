@@ -1,5 +1,5 @@
-// This is the one of the problem of star pattern printing.
-// This will helps to build a strong logic in loops. 
+/* This is the one of the problem of star pattern printing.
+This will helps to build a strong logic in loops. */
 
 
 public class StarPrinting {
@@ -13,3 +13,13 @@ public class StarPrinting {
         }
     }
 }
+/*
+
+OUTPUT : 
+
+*
+**
+***
+****
+*****
+*/
