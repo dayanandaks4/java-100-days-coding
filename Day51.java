@@ -23,3 +23,31 @@ class Main {
         s.swap(num1,num2);
     }
 }
+
+
+
+
+
+import java.util.Scanner;
+
+
+class checkNumber{
+    String evenOrOdd(int number){
+        if( number % 2 ==0 ){
+            System.out.println("Even");
+        }else {
+            System.out.println("Odd");
+        }
+        return null;
+    }
+}
+class Main {
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        checkNumber cn = new checkNumber();
+        System.out.print("Enter the  number: ");
+        int number = sc.nextInt();
+        cn.evenOrOdd(number);
+
+    }
+}
