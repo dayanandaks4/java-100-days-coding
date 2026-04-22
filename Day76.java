@@ -23,8 +23,6 @@ class Solution {
 
             current.add(candidates[i]);
             backtrack(candidates, target - candidates[i], i, current, result);
-
-            // remove last element (backtrack)
             current.remove(current.size() - 1);
         }
     }
