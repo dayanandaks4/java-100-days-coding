@@ -5,7 +5,6 @@ class Solution {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(candidates);
         backtrack(candidates, target, 0, new ArrayList<>(), result);
-
         return result;
     }
 
@@ -17,19 +16,15 @@ class Solution {
             result.add(new ArrayList<>(temp));
             return;
         }
-
         for (int i = start; i < arr.length; i++) {
 
 
             if (i > start && arr[i] == arr[i - 1]) {
                 continue;
             }
-
-            
             if (arr[i] > target) {
                 break;
             }
-
             temp.add(arr[i]);
 
             backtrack(arr, target - arr[i], i + 1, temp, result);
